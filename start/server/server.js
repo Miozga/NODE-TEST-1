@@ -1,4 +1,4 @@
-const http = require("http");
+/*const http = require("http");
 
 const server = http.createServer((request, response) => {
   response.writeHead(200, { "Content-Type": "text/html" });
@@ -6,3 +6,14 @@ const server = http.createServer((request, response) => {
 });
 
 server.listen(5500, "127.0.0.1", () => console.log("server wystartował"));
+
+*/
+const add = (x, y) => x + y;
+
+const division = (number1, number2) => number1 / number2;
+
+const math = (a, b, callback) => {
+  console.log(callback(a, b));
+};
+
+math(3, 4, add);
